@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" 
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title> Contact </title>
+    
+</head>
+<body>
+    <header>
+        <a class="skip-main" href="javascript:void(0);">Skip to main content</a>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class = "navbar-brand nav-name google-font" href="javascript:void(0);" aria-label="author name">T. Shen</a>
+                </div>
+                <ul class="nav navbar-nav nav-tabs">
+                <li class="nav-button"><a href="index.html">Home</a></li>
+                <li class="nav-button"><a href="about.html">About</a></li>
+                <li class="nav-button"><a href="foodieart.html">Foodie Blog</a></li> 
+                <li class="nav-button"><a href="gallery.html">Gallery</a></li> 
+                <li class="nav-button active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    <div class="container-row">
+        <div class = "container-contact-column">
+            <div class="page-content">
+            <img src="images/Contact2.jpeg" alt="contact picture" style="width: 80%">
+            </div>
+        </div>
+
+        <div class = "container-contact-column">
+            <h1 class="google-font">Get In Touch</h1>
+            <p>Check this out and feel free to contact me. I’m a great place for you to tell a story so please let me know a little more about you.</p>
+            <div class="icon-layout">
+                <i class="far fa-envelope">&nbsp tqshen@umich.edu</i> &nbsp | &nbsp
+                <i class="fas fa-mobile-alt default" id="myBtn">&nbsp 213-263-1361</i> 
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h2 class="modal-title">Hi there!</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p>Are you sure to call me right now?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><a href="tel:2132631361">Yes</a></button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="mailto:tqshen@umich.edu" onsubmit="return checkForm();">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name.. (required)" >
+                <p class="errormsg" id="nameerrormsg">Please enter your name above!</p>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email.. (required)">
+                <p class="errormsg" id="emailerrormsg">Please enter your street address!</p>
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">USA</option>
+                    <option value="canada">China</option>
+                    <option value="usa">Canada</option>
+                </select>
+
+                <label for="content">Message</label>
+                <textarea id="content" name="content" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    </main>
+
+    <footer>
+    <div class="footer">
+        <p>©2018 Created by Tianqi Shen</p> 
+    </div>   
+    </footer> 
+
+    <script type="text/javascript">
+        function checkForm(){
+            var a = document.getElementById("name")
+            var b = document.getElementById("email")
+            if (a.value.length == 0)
+                {
+                    document.getElementById("nameerrormsg").style.display = "block"; a = 0;}
+               else {
+                    document.getElementById("nameerrormsg").style.display = "none";}
+    
+            if (b.value.length == 0)
+                {document.getElementById("emailerrormsg").style.display = "block"; b = 0}
+            else {document.getElementById("emailerrormsg").style.display = "none"; }
+    
+            if (b == 0 || a == 0){
+                alert("Please fill the information!")
+                return false;
+            }
+        }  
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#myBtn").click(function(){
+                $("#myModal").modal();
+            });
+        });
+    </script>
+</body>
+</html>
