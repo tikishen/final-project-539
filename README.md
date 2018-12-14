@@ -23,13 +23,12 @@ This page used the same row container and page container as About Page. The logi
 - **Foodie Blog**:<br>
 Grid is used here to create two grid boxes that are sit next to each other, and has 20px row gap with other grid boxes. <br>
 
-### JS and jQuery
-- **JS is used for Gallery and Contact Page.**<br>
-Gallery: Murri is imported so as to create murre lightbox gallery.<br>
-Contact: When clicking submit form, the js is triggered to check if the name and email text area has been filled. If not, it raises error message. If yes, the form could be submitted.<br>
+### JS and jQuery (excluding advanced js and jquery)
+- **JS is used for Contact Page.**<br>
+When clicking submit form, the js is triggered to check if the name and email text area has been filled. If not, it raises error message. If yes, the form could be submitted.<br>
 
  - **jQuery is used for Foodie Blog Page.**<br>
-The heart-like icon was black initially. When clicking the icon, it became to red, which would google the ‘like’ class style.<br>
+The heart-like icon was dark grey initially. When clicking the icon, it became to red, triggling style in ".like" class.<br>
 
 
 ## Extras
@@ -80,42 +79,11 @@ Implementation of Lightbox was also imported from an online material. The new co
 
 #### Modals
 **Implementation is on the Contact Page by Clicking the phone icon/number**<br>
-Modal is written upon bootstrap. The new concepts to learn are the classes of bootstrap and telephone protocol. The challenge here is bootstrap since we do not learn much bootstrap in class. 
+Modal is written upon bootstrap. The new concepts to learn are the classes of bootstrap, telephone protocol as well as CSS cursor property. The challenge here is bootstrap since we do not learn much bootstrap in class. Besides, when hovering the phone icon/number, the mouse cursor default display trigger for indicating the link. 
 
 ### Advanced proficiency with Bootstrap
 - Implementation of navigation bar written upon bootstrap 3<br>
 - Modals written upon bootstrap 3 <br>
 Challenge of writing bootstrap is due to unfamiliar with bootstrap. Therefore, I read official document to know available classes of bootstrap that could be used for my site.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
