@@ -30,6 +30,12 @@ When clicking submit form, the js is triggered to check if the name and email te
  - **jQuery is used for Foodie Blog Page.**<br>
 The heart-like icon was dark grey initially. When clicking the icon, it became to red, triggling style in ".like" class.<br>
 
+### Each page must validate on w3 and aXe
+Yes, except w3 errors on lightbox, but it was acceptable for the previous assignment.
+
+### What I have changed after demo?
+The navigation can clearly display the current page, implemeted by bootstrap nav-tabs and active classes.
+
 
 ## Extras
 ### Accessibility
@@ -70,20 +76,20 @@ By using VoiceOver, users have access to all information and features on the pag
 
 ### Advanced JS or jQuery
 #### Carousel
-**Implementation is on Foodie Blog Page**<br>
-By importing css and js files from an online carousel implementation called Slick, I could establish my own carousel. One of challenges I faced was issue of color contrast. After closing scrutiny, I found the some imported carousel elements have a transparent background color. Therefore, I write classed to override the background color of imported carousel elements. The concept to learn in this case is how to adjust color contrast.
+**Implementation is on the Foodie Blog Page**<br>
+By importing css and js files from an online carousel implementation called Slick `http://kenwheeler.github.io/slick/`, I established my own carousel. One of challenges I faced was color contrast issue. After a close scrutiny, I found some imported carousel elements have a transparent background color. Therefore, I wrote classes to override the background color of the imported carousel elements. The concept to learn for this implementation is how to adjust color contrast and override the class elements.
 
 #### Lightbox
-**Implementation is on Gallery Page**<br>
-Implementation of Lightbox was also imported from an online material. The new concepts are the differences of data-lightbox, data-title and data-alt, which is also the challenge I met. At the beginning, I assigned data-lightbox of each image into different texts mistakenly, so the lightbox did not work. Writing each attribute with correct text/value requires complete understanding of the instructions.
+**Implementation is on the Gallery Page**<br>
+Implementation of Lightbox is also imported from an online material `https://lokeshdhakar.com/projects/lightbox2/`. The new concepts are the differences of data-lightbox, data-title and data-alt, which is also the challenge I met. At the beginning, I assigned data-lightbox of each image into different texts mistakenly, so the lightbox did not work. Writing each attribute with correct text/value requires complete understanding of the instructions.
 
 #### Modals
-**Implementation is on the Contact Page by Clicking the phone icon/number**<br>
-Modal is written upon bootstrap. The new concepts to learn are the classes of bootstrap, telephone protocol as well as CSS cursor property. The challenge here is bootstrap since we do not learn much bootstrap in class. Besides, when hovering the phone icon/number, the mouse cursor default display trigger for indicating the link. 
+**Implementation is on the Contact Page by clicking the phone icon/number**<br>
+Modal is written by bootstrap. The new concepts to learn are bootstrap, telephone protocol as well as CSS cursor property. Taking example of the last concept. When hovering the phone icon/number, the mouse cursor default display trigger for indicating the link. The challenge for this implementation is bootstrap since we did not learn much bootstrap in class.
 
 ### Advanced proficiency with Bootstrap
-- Implementation of navigation bar written upon bootstrap 3<br>
-- Modals written upon bootstrap 3 <br>
+- Implementation of navigation bar is written by bootstrap 3<br>
+- Modal is written upon bootstrap 3 <br>
 Challenge of writing bootstrap is due to unfamiliar with bootstrap. Therefore, I read official document to know available classes of bootstrap that could be used for my site.
 
 
