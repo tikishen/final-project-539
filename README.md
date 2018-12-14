@@ -69,6 +69,26 @@ Yes. aXe does not detect any issues related to labels.
 12. Is all content and functionality available to a screen reader? <br>
 By using VoiceOver, users have access to all information and features on the page, and complete all tasks independently.
 
+### Advanced JS or jQuery
+#### Carousel
+**Implementation is on Foodie Blog Page**<br>
+By importing css and js files from an online carousel implementation called Slick, I could establish my own carousel. One of challenges I faced was issue of color contrast. After closing scrutiny, I found the some imported carousel elements have a transparent background color. Therefore, I write classed to override the background color of imported carousel elements. The concept to learn in this case is how to adjust color contrast.
+
+#### Lightbox
+**Implementation is on Gallery Page**<br>
+Implementation of Lightbox was also imported from an online material. The new concepts are the differences of data-lightbox, data-title and data-alt, which is also the challenge I met. At the beginning, I assigned data-lightbox of each image into different texts mistakenly, so the lightbox did not work. Writing each attribute with correct text/value requires complete understanding of the instructions.
+
+#### Modals
+**Implementation is on the Contact Page by Clicking the phone icon/number**<br>
+Modal is written upon bootstrap. The new concepts to learn are the classes of bootstrap and telephone protocol. The challenge here is bootstrap since we do not learn much bootstrap in class. 
+
+### Advanced proficiency with Bootstrap
+- Implementation of navigation bar written upon bootstrap 3<br>
+- Modals written upon bootstrap 3 <br>
+Challenge of writing bootstrap is due to unfamiliar with bootstrap. Therefore, I read official document to know available classes of bootstrap that could be used for my site.
+
+
+
 
 
 
